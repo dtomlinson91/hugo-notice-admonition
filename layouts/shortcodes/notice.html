@@ -110,6 +110,6 @@
 <div class="notice {{ $noticeType }}" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>
     <p class="first notice-title"><span class="icon-notice baseline"><svg>
                 <use href="#{{- $noticeType -}}-notice"></use>
-            </svg></span><img class="admonition-icon" src="/images/icons/{{- $noticeType -}}-icon-notice.png"></img>{{- i18n $noticeType -}}</p>
+            </svg></span><img class="admonition-icon" src="/images/icons/{{- $noticeType -}}-icon-notice.png" alt="admonition"></img>{{- i18n $noticeType -}}</p>
     {{- if or $block (not $raw) }}{{ $raw }}{{ else }}<p>{{ $raw }}</p> {{ end -}}
 </div>
